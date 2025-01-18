@@ -84,6 +84,7 @@ li {
     background-color: var(--grey-800);
     padding: 40px;
     border-radius: 12px;
+    width: 80%;
     max-width: 456px;
 }
 
