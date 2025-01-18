@@ -85,7 +85,12 @@ li {
     padding: 40px;
     border-radius: 12px;
     width: 80%;
-    max-width: 456px;
+}
+
+@media screen and (min-width:765px) {
+    .container{
+        width: 476px;
+    }
 }
 
 .content {
