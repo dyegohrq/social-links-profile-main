@@ -1,0 +1,145 @@
+:root {
+    /* Grey */
+    --grey-900: #141414;
+    --grey-800: #1f1f1f;
+    --grey-700: #333;
+
+    /* Green */
+    --green: #c4f82a;
+
+    /* White */
+    --white: #fff;
+}
+
+/* conf geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    background-color: var(--grey-900);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Typography */
+
+.text-present-1, .text-present-2, .text-present-2-bold{
+    font-family: "Inter", serif;
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
+.text-present-1{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text-present-2 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.text-present-2-bold {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Button */
+
+.button-grey a{
+    width: 304px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: var(--grey-700);
+    color: var(--white);
+    transition: .5s;
+}
+
+.button-grey a:hover {
+    background-color: var(--green);
+    color: var(--grey-700);
+}
+
+.container {
+    background-color: var(--grey-800);
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 456px;
+}
+
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.content .img-content {
+    background: url(../assets/images/avatar-jessica.jpeg) no-repeat center / cover;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+}
+
+.content .text-content {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content .text-content .title h1 {
+    color: var(--white);
+}
+
+.content .text-content .title h2 {
+    color: var(--green);
+}
+
+.content .text-content p {
+    color: var(--white);
+}
+
+.container .list-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.container .list-content .list-item {
+    width: 100%;
+    text-align: center;
+}
+
+.attribution { 
+    font-size: 13px; 
+    text-align: center; 
+    font-family: "Inter", serif;
+    color: var(--white);
+}
+
+.attribution a { 
+    color: var(--green);
+}
